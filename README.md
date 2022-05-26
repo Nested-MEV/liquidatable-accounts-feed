@@ -57,3 +57,22 @@ Websocket messages look like this (without the comments):
   }
 }
 ```
+
+## Quickstart
+
+- Make sure that you are on the right version of Rust using rustup. (As of 26 May 2022)
+```
+rustup default nightly-2022-04-01-x86_64-apple-darwin
+```
+
+- Once rust is installed. Ensure that you have Solana CLI installed as well. Follow this [tutorial](https://docs.solana.com/cli/install-solana-cli-tools#use-solanas-install-tool)
+  - I was able to build w solana version 1.10.13, though if you do get an error, try to install 1.8 version of solana cli if you aren't able to cargo build the project.
+
+- Once you have both installed, you can run the following commands to get the feed running
+```
+# Build the project with cargo
+cargo build
+
+# Pass the config file to the cargo run command.
+cargo run config.toml
+```
